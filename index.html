@@ -19,7 +19,7 @@
   </head>
   <body class="">
     <header class="container ">
-      <div class="h-screen w-screen flex flex-col mx-auto justify-center bg-[#F9F6E2] lg:flex-row ">
+      <div class="h-screen w-full flex flex-col mx-auto justify-center bg-[#F9F6E2] lg:flex-row lg:w-screen">
         <div class="lg:w-2/4 text-center lg:mt-20">
           <h4 class="text-[#111] text-2xl font-medium md:mt-20 lg:text-3xl">---SALE FEVER---</h4>
           <h1 class="mt-6 text-4xl  lg:text-5xl font-bold text-[#111] lg:mt-12">
@@ -56,7 +56,7 @@
                 <i class="fa-regular fa-star text-yellow-500"></i>
               </div>
               <h2 class="text-center mt-2 text-[#111] font-semibold text-2xl">K. Accessories</h2>
-              <h3 class="text-center mt-2">39.00 TK</h3>
+              <h3 class="text-center mt-2"><span onclick="priceClickHandler(this)">39.00</span> TK</h3>
             </div>
             <div class="bg-[#FFFFFF]">
               <div class="m-4 rounded-lg bg-[#1111110C] p-8">
@@ -70,7 +70,7 @@
                 <i class="fa-regular fa-star text-yellow-500"></i>
               </div>
               <h2 class="text-center mt-2 text-[#111] font-semibold text-2xl">K. Accessories</h2>
-              <h3 class="text-center mt-2">49.00 TK</h3>
+              <h3 class="text-center mt-2"><span onclick="priceClickHandler(this)">49.00</span> TK</h3>
             </div>
             <div class="bg-[#FFFFFF] ">
               <div class="m-4 rounded-lg bg-[#1111110C] p-8">
@@ -84,7 +84,7 @@
                 <i class="fa-regular fa-star text-yellow-500"></i>
               </div>
               <h2 class="text-center mt-2 text-[#111] font-semibold text-2xl">Home Cooker</h2>
-              <h3 class="text-center mt-2">69.00 TK</h3>
+              <h3 class="text-center mt-2"><span onclick="priceClickHandler(this)">69.00</span> TK</h3>
             </div>
            </div>
               </div>
@@ -107,7 +107,7 @@
                 <i class="fa-regular fa-star text-yellow-500"></i>
               </div>
               <h2 class="text-center mt-2 text-[#111] font-semibold text-2xl">Sports Back Cap</h2>
-              <h3 class="text-center mt-2">49.00 TK</h3>
+              <h3 class="text-center mt-2"><span onclick="priceClickHandler(this)">49.00</span> TK</h3>
             </div>
             <div class="bg-[#FFFFFF] ">
               <div class="m-4 rounded-lg bg-[#1111110C] p-8">
@@ -121,7 +121,7 @@
                 <i class="fa-regular fa-star text-yellow-500"></i>
               </div>
               <h2 class="text-center mt-2 text-[#111] font-semibold text-2xl">Full Jersey Set</h2>
-              <h3 class="text-center mt-2">69.00 TK</h3>
+              <h3 class="text-center mt-2"><span onclick="priceClickHandler(this)">69.00</span> TK</h3>
             </div>
             <div class="bg-[#FFFFFF] ">
               <div class="m-4 rounded-lg bg-[#1111110C] p-8">
@@ -135,7 +135,7 @@
                 <i class="fa-regular fa-star text-yellow-500"></i>
               </div>
               <h2 class="text-center mt-2 text-[#111] font-semibold text-2xl">Sports cates</h2>
-              <h3 class="text-center mt-2">159.00 TK</h3>
+              <h3 class="text-center mt-2"><span onclick="priceClickHandler(this)">159.00</span> TK</h3>
             </div>
            </div>
               </div>
@@ -158,7 +158,7 @@
                 <i class="fa-regular fa-star text-yellow-500"></i>
               </div>
               <h2 class="text-center mt-2 text-[#111] font-semibold text-2xl">Single Relax Chair</h2>
-              <h3 class="text-center mt-2">185.00 TK</h3>
+              <h3 class="text-center mt-2"><span onclick="priceClickHandler(this)">185.00</span> TK</h3>
             </div>
             <div class="bg-[#FFFFFF] ">
               <div class="m-4 rounded-lg bg-[#1111110C] p-8">
@@ -172,7 +172,7 @@
                 <i class="fa-regular fa-star text-yellow-500"></i>
               </div>
               <h2 class="text-center mt-2 text-[#111] font-semibold text-2xl">Children play</h2>
-              <h3 class="text-center mt-2">299.00 TK</h3>
+              <h3 class="text-center mt-2"><span onclick="priceClickHandler(this)">299.00</span> TK</h3>
             </div>
             <div class="bg-[#FFFFFF] ">
               <div class="m-4 rounded-lg bg-[#1111110C] p-8">
@@ -186,7 +186,7 @@
                 <i class="fa-regular fa-star text-yellow-500"></i>
               </div>
               <h2 class="text-center mt-2 text-[#111] font-semibold text-2xl">Flexible Sofa</h2>
-              <h3 class="text-center mt-2">339.00 TK</h3>
+              <h3 class="text-center mt-2"><span onclick="priceClickHandler(this)">339.00</span> TK</h3>
             </div>
            </div>
               </div>
@@ -195,7 +195,8 @@
         </div>
 
         <div>
-          <div class="w-[332px]  h-[36px] bg-[#FFFFFF] ">
+         <div class="bg-[#FFFFFF]">
+          <div class="w-[332px]  h-[36px]  ">
             <h1 class="text-2xl font-medium text-[#111] ml-[10px] mt-[24px] ">Have coupon?</h1>
             <div class="flex justify-center">
               <input class="bg-white text-center w-[232px] h-[56px] border rounded-lg mt-[16px]" type="text" placeholder="Coupon code">
@@ -204,15 +205,16 @@
               </button>
             </div>
           </div>
+         </div>
           <div class="bg-white rounded-lg mt-24">
-            <div class="mb-4 text-[#111] text-xl mt-4">
+            <div id="secletd-name" class="mb-4 text-[#111] text-xl mt-4">
 
             </div>
-            <hr>
+            <hr>                            
             <div class="mt-12 mb-6 text-[#111]  text-xl ">
-              <h1>Total price:<span>0</span> <span>Tk</span></h1>
-              <h1>Discount:<span>0</span> <span>Tk</span></h1>
-              <h1>Total:<span>0</span> <span>Tk</span></h1>
+              <h1>Total price:<span id="Total-price">0</span> <span>Tk</span></h1>
+              <h1>Discount:<span id="Discount">0</span> <span>Tk</span></h1>
+              <h1>Total:<span id="Total">0</span> <span>Tk</span></h1>
             </div>
           </div>
           <hr>
